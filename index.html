@@ -49,7 +49,9 @@
     .bar span{display:block;height:100%;width:65%;background:linear-gradient(90deg,var(--baby),var(--light));border-radius:6px}
     .endorse{background:#0f2446;color:#cfe5ff}
     .endorse h2{color:#fff}
-    .endorse .card{background:#0f274f;color:#e6f2ff;border:1px solid #1f3a6c}
+    .notice{background:#ffe8a3;color:#4a3510;padding:10px 0;border-bottom:1px solid #ffd875}
+    .notice .wrap{font-weight:700}
+
     .footer{background:#091a33;color:#c9dbff;padding:28px 0}
     form input, form textarea, select{
       width:100%;padding:12px 14px;border:1px solid #c9d7ea;border-radius:12px;background:#fff;font:inherit
@@ -66,16 +68,18 @@
 <body>
 <header>
   <div class="wrap nav">
-    <div class="logo"><span class="bow" aria-hidden="true"></span><span>VENTER ‘25</span></div>
+    <div class="logo"></span><span>VENTER ‘25</span></div>
     <nav aria-label="primary">
       <a href="#issues">Platform</a>
       <a href="#plan">Plan</a>
       <a href="#events">Events</a>
-      <a href="#volunteer" class="btn ghost">Volunteer</a>
-      <a href="#donate" class="btn">Donate</a>
     </nav>
   </div>
 </header>
+
+<div class="notice" role="status" aria-label="Voting starts 4 October 2025">
+  <div class="wrap"><strong>Vote from 4 October 2025</strong> • Make your voice heard.</div>
+</div>
 
 <section class="hero">
   <div class="wrap grid grid hero">
@@ -84,15 +88,14 @@
       <h1>Roxwood First. Strong Shores. Stronger People.</h1>
       <p>Andre Venter is running for Mayor to deliver accountable policing, a thriving local economy, and real opportunities for every Roxwood resident.</p>
       <div style="display:flex;gap:12px;flex-wrap:wrap;margin-top:8px">
-        <a href="#donate" class="btn" aria-label="Donate to Venter 2025">Donate</a>
-        <a href="#volunteer" class="btn ghost" aria-label="Volunteer for Venter 2025">Volunteer</a>
+        
       </div>
       <p class="small muted" style="margin-top:10px">Our Island. Our Future.</p>
     </div>
     <div>
       <div class="card" role="img" aria-label="Andre Venter portrait, campaign style">
         <!-- Placeholder image area; replace src with your campaign art -->
-        <img src="assets/venter-hero.jpg" alt="Andre Venter" style="width:100%;border-radius:12px;display:block;">
+        <img src="assets/main.png" alt="Andre Venter" style="width:100%;border-radius:12px;display:block;">
         <div class="bar"><span></span></div>
         <p class="small muted">Campaign progress powered by Roxwood supporters.</p>
       </div>
@@ -155,66 +158,34 @@
     </div>
   </div>
 </section>
-
+<!--
 <section id="endorse" class="section endorse">
   <div class="wrap">
-    <h2>Allies & Endorsements</h2>
+    <h2>Endorsements</h2>
     <div class="card">
       <p><strong>Optional alignment:</strong> If appropriate, Venter welcomes collaboration with Los Santos leaders who support local economies and accountability. (Toggle this section on if Santini endorses; remove if not.)</p>
     </div>
   </div>
 </section>
-
+--> 
 <section id="events" class="section">
   <div class="wrap">
     <h2>Events</h2>
     <div class="grid2">
       <div class="card">
         <h3>Harbor Rally</h3>
-        <p>Roxwood Docks • Friday 6PM</p>
+        <p>Roxwood Docks • TBC</p>
         <p>Jobs, docks, and keeping island trade local.</p>
       </div>
       <div class="card">
         <h3>Town Hall</h3>
-        <p>Community Hall • Tuesday 7PM</p>
+        <p>Juniper • TBC</p>
         <p>Accountable policing & public reporting Q&A.</p>
       </div>
     </div>
   </div>
 </section>
 
-<section id="donate" class="section">
-  <div class="wrap grid2">
-    <div class="card">
-      <h2>Donate</h2>
-      <p>Your support keeps this a people-powered campaign.</p>
-      <form aria-label="Donate">
-        <div class="row">
-          <input type="text" placeholder="First name" required />
-          <input type="text" placeholder="Last name" required />
-        </div>
-        <div class="row">
-          <input type="email" placeholder="Email" required />
-          <input type="text" placeholder="Amount (USD)" required />
-        </div>
-        <button class="btn" type="submit">Contribute</button>
-        <p class="small">Demo form — connect to your donation processor later.</p>
-      </form>
-    </div>
-    <div id="volunteer" class="card">
-      <h2>Volunteer</h2>
-      <p>Knock doors, phone bank, or help at events. Roxwood rises when we show up.</p>
-      <form aria-label="Volunteer">
-        <div class="row">
-          <input type="text" placeholder="Name" required />
-          <input type="email" placeholder="Email" required />
-        </div>
-        <textarea rows="4" placeholder="Tell us how you’d like to help"></textarea>
-        <button class="btn" type="submit">I’m In</button>
-      </form>
-    </div>
-  </div>
-</section>
 
 <footer class="footer">
   <div class="wrap" style="display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap;align-items:center">
